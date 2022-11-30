@@ -9,7 +9,7 @@ import time
 from ..redis.producer import Producer
 from ..redis.config import Redis
 from ..schema.chat import Chat
-from rejson import Path
+from reJson import Path
 from redis.cache import Cache
 
 chat = APIRouter()
