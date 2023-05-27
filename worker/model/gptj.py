@@ -9,7 +9,7 @@ class GPT:                                                                      
     def __init__(self):
         self.url = os.environ.get('MODEL_URL')
         self.headers = {
-            "Authorization": f"Bearer {os.environ.get('HUGGINFACE_INFERENCE_TOKEN')}"}      # authenctation header
+            "Authorization": f"Bearer {os.environ.get('HUGGINFACE_INFERENCE_TOKEN')}"}   # authenctation header
         self.payload = {
             'inputs': "",                                                                   # predefined payload
             "parameters": {
@@ -32,4 +32,3 @@ def query(self, input: str) -> list:
 
 if __name__ == "__main__":
     GPT().query("Will artifical intelligence help humanity conquer the universe?")         # testing using the query method
-
