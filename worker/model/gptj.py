@@ -32,3 +32,4 @@ def query(self, input: str) -> list:
 
 if __name__ == "__main__":
     GPT().query("Will artifical intelligence help humanity conquer the universe?")         # testing using the query method
+
